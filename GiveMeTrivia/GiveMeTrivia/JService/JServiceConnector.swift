@@ -48,6 +48,7 @@ class JServiceConnector {
             dispatch_async(dispatch_get_main_queue(), {
                 callback(clues)
             })
+            //testing dev branch
         }
     }
     
