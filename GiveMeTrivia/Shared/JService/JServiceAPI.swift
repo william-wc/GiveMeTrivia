@@ -44,9 +44,9 @@ class JServiceAPI {
         }
         
         if !parameters.isEmpty {
-            uri += parameters.flatMap({
-                if ($0.1 != nil) {
-                    return "\($0.0)=\($0.1)"
+            uri += "?" + parameters.flatMap({
+                if let v = $0.1 {
+                    return "\($0.0)=\(v)"
                 }
                 return nil
             }).joinWithSeparator("&")

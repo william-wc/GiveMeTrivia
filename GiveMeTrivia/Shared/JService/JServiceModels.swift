@@ -18,11 +18,11 @@ class JSClue: JServiceModel {
     let idCategory  : Int
     let question    : String
     let answer      : String
-    let value       : Int
+    let value       : Int?
     
     var category    : JSCategory?
     
-    init(id: Int, idCategory: Int, question: String, answer: String, value: Int) {
+    init(id: Int, idCategory: Int, question: String, answer: String, value: Int?) {
         self.id         = id
         self.idCategory = idCategory
         self.question   = question

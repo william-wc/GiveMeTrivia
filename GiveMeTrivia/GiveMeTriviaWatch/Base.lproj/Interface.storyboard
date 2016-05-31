@@ -1,15 +1,164 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="13E28" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8Jo-gv-ubb">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Question-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller identifier="TriviaQuestion" title="Question" id="AgC-eL-Hgc" customClass="TriviaQuestionInterfaceController" customModule="GiveMeTriviaWatch_Extension">
+                    <items>
+                        <group width="1" widthAdjustment="-12" alignment="center" layout="vertical" radius="10" spacing="0.0" id="yqv-Xf-edt">
+                            <items>
+                                <label width="1" alignment="left" text="textCategory" textAlignment="center" numberOfLines="0" id="CuF-aO-DCU">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </label>
+                            </items>
+                            <color key="backgroundColor" red="0.12549019610000001" green="0.78823529410000004" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </group>
+                        <label width="1" alignment="center" text="textQuestion" textAlignment="center" numberOfLines="0" id="tBl-PL-xCk">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle1"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="textCategory" destination="CuF-aO-DCU" id="9x1-v8-JCb"/>
+                        <outlet property="textQuestion" destination="tBl-PL-xCk" id="GuZ-aH-UDw"/>
+                    </connections>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="460" y="317"/>
+        </scene>
+        <!--Answer-->
+        <scene sceneID="axC-ga-4Tr">
+            <objects>
+                <controller identifier="TriviaAnswer" title="Answer" id="2hl-UT-ao5" customClass="TriviaAnswerInterfaceController" customModule="GiveMeTriviaWatch_Extension">
+                    <items>
+                        <group width="1" height="1" alignment="center" layout="vertical" id="L6o-SX-5lO">
+                            <items>
+                                <label width="1" alignment="center" text="textAnswer" textAlignment="center" numberOfLines="0" id="fY1-ix-R78">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <button width="1" height="30" alignment="center" verticalAlignment="bottom" title="Another" id="Ysf-et-uAL">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" red="0.26727152160000001" green="0.70475934039999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                    <connections>
+                                        <action selector="didSelectNext:" destination="2hl-UT-ao5" id="l15-lV-Sk6"/>
+                                    </connections>
+                                </button>
+                                <button width="1" height="30" alignment="center" verticalAlignment="bottom" title="Add Category" id="DyN-JX-dsM">
+                                    <color key="backgroundColor" red="0.12549019610000001" green="0.78823529410000004" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                    <connections>
+                                        <action selector="didSelectAdd:" destination="2hl-UT-ao5" id="sLY-S4-fIe"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="buttonAdd" destination="DyN-JX-dsM" id="Cgl-Wk-cwB"/>
+                        <outlet property="buttonNext" destination="Ysf-et-uAL" id="mF0-9E-5ST"/>
+                        <outlet property="textAnswer" destination="fY1-ix-R78" id="HEv-VK-8UM"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="674" y="317"/>
+        </scene>
+        <!--Menu-->
+        <scene sceneID="nJS-aE-e6x">
+            <objects>
+                <controller identifier="Menu" title="Menu" id="8Jo-gv-ubb" customClass="MenuInterfaceController" customModule="GiveMeTriviaWatch_Extension">
+                    <items>
+                        <group width="1" alignment="center" verticalAlignment="center" layout="vertical" id="9Nu-q3-y4J">
+                            <items>
+                                <button alignment="left" id="pnu-xT-Jrh">
+                                    <group key="contentGroup" width="1" alignment="left" contentMode="scaleAspectFit" radius="9" spacing="12" id="nNB-UY-XTb">
+                                        <items>
+                                            <label alignment="right" verticalAlignment="center" text="Random" textAlignment="center" id="FuN-rE-Xv9">
+                                                <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                            </label>
+                                            <imageView width="30" height="30" alignment="right" verticalAlignment="center" image="Shuffle-50" contentMode="scaleAspectFit" id="u3r-Qs-vYj"/>
+                                        </items>
+                                        <color key="backgroundColor" red="0.26727152160000001" green="0.70475934039999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <edgeInsets key="margins" left="0.0" right="4" top="0.0" bottom="0.0"/>
+                                    </group>
+                                    <connections>
+                                        <action selector="didSelectTrivia:" destination="8Jo-gv-ubb" id="kaK-35-rMB"/>
+                                    </connections>
+                                </button>
+                                <button alignment="left" id="oP1-63-7L1">
+                                    <group key="contentGroup" width="1" alignment="left" radius="9" spacing="12" id="Oui-0K-mh4">
+                                        <items>
+                                            <label alignment="right" verticalAlignment="center" text="Categories" textAlignment="center" id="HUQ-m6-xgO">
+                                                <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                            </label>
+                                            <imageView width="30" height="30" alignment="right" verticalAlignment="center" image="Sheets-50" contentMode="scaleAspectFit" id="viL-0K-qBR"/>
+                                        </items>
+                                        <color key="backgroundColor" red="0.12549019610000001" green="0.78823529410000004" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <edgeInsets key="margins" left="0.0" right="5" top="0.0" bottom="0.0"/>
+                                    </group>
+                                    <connections>
+                                        <action selector="didSelectCategories:" destination="8Jo-gv-ubb" id="8OI-7d-plp"/>
+                                    </connections>
+                                </button>
+                                <button alignment="left" id="hAY-yf-fXy">
+                                    <group key="contentGroup" width="1" alignment="left" radius="9" spacing="12" id="RHS-Na-sEq">
+                                        <items>
+                                            <label alignment="right" verticalAlignment="center" text="Settings" textAlignment="center" id="evY-b3-LBc">
+                                                <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                            </label>
+                                            <imageView width="30" height="30" alignment="right" verticalAlignment="center" image="Settings-50" contentMode="scaleAspectFit" id="ggq-oO-ZQi"/>
+                                        </items>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <edgeInsets key="margins" left="0.0" right="5" top="0.0" bottom="0.0"/>
+                                    </group>
+                                    <connections>
+                                        <action selector="didSelectSettings:" destination="8Jo-gv-ubb" id="707-FZ-Otd"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="196" y="317"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="S8Q-k4-kZo">
+            <objects>
+                <controller identifier="Settings" title="Settings" id="Xvz-4G-E9Q" customClass="SettingsInterfaceController" customModule="GiveMeTriviaWatch_Extension">
+                    <items>
+                        <table alignment="left" id="Qv9-b0-7CM">
+                            <items>
+                                <tableRow identifier="category" selectable="NO" id="Xkq-XH-z7Q" customClass="SettingsCategoryCell" customModule="GiveMeTriviaWatch_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" radius="9" id="lDw-hd-yxA">
+                                        <items>
+                                            <switch width="1" alignment="center" verticalAlignment="center" value="YES" title="text category" id="Nni-KE-Ek4">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="tintColor" red="0.12549019610000001" green="0.78823529410000004" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="didSwitch:" destination="Xkq-XH-z7Q" id="Lfx-QV-H3m"/>
+                                                </connections>
+                                            </switch>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="switchCategory" destination="Nni-KE-Ek4" id="wwH-Ho-P4Z"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="Qv9-b0-7CM" id="kpB-JW-T1m"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="460" y="614"/>
         </scene>
     </scenes>
 </document>

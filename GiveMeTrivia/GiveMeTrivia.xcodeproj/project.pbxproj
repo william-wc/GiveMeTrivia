@@ -16,17 +16,30 @@
 		57AC2DBF1CF733660087BEDA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57AC2DBD1CF733660087BEDA /* Interface.storyboard */; };
 		57AC2DC11CF733660087BEDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57AC2DC01CF733660087BEDA /* Assets.xcassets */; };
 		57AC2DC81CF733670087BEDA /* GiveMeTriviaWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 57AC2DC71CF733670087BEDA /* GiveMeTriviaWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		57AC2DCD1CF733670087BEDA /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC2DCC1CF733670087BEDA /* InterfaceController.swift */; };
 		57AC2DCF1CF733670087BEDA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC2DCE1CF733670087BEDA /* ExtensionDelegate.swift */; };
 		57AC2DD11CF733670087BEDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57AC2DD01CF733670087BEDA /* Assets.xcassets */; };
 		57AC2DD51CF733670087BEDA /* GiveMeTriviaWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 57AC2DBB1CF733660087BEDA /* GiveMeTriviaWatch.app */; };
-		57AC2DDF1CF7339F0087BEDA /* JServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC2DDE1CF7339F0087BEDA /* JServiceAPI.swift */; };
-		57AC2DE21CF734380087BEDA /* JServiceModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC2DE11CF734380087BEDA /* JServiceModels.swift */; };
-		57AC2DE71CF7346B0087BEDA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC2DE61CF7346B0087BEDA /* Extensions.swift */; };
-		57AC2DE91CF734750087BEDA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC2DE81CF734750087BEDA /* Constants.swift */; };
-		57AC2DEB1CF739840087BEDA /* JServiceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC2DEA1CF739840087BEDA /* JServiceConstants.swift */; };
-		57AC2DED1CF73F100087BEDA /* JServiceParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC2DEC1CF73F100087BEDA /* JServiceParser.swift */; };
-		57AC2DEF1CF740A10087BEDA /* JServiceConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC2DEE1CF740A10087BEDA /* JServiceConnector.swift */; };
+		57AC2DFC1CF753560087BEDA /* JServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC2DF71CF753560087BEDA /* JServiceAPI.swift */; };
+		57AC2DFD1CF753560087BEDA /* JServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC2DF71CF753560087BEDA /* JServiceAPI.swift */; };
+		57AC2DFE1CF753560087BEDA /* JServiceConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC2DF81CF753560087BEDA /* JServiceConnector.swift */; };
+		57AC2DFF1CF753560087BEDA /* JServiceConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC2DF81CF753560087BEDA /* JServiceConnector.swift */; };
+		57AC2E001CF753560087BEDA /* JServiceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC2DF91CF753560087BEDA /* JServiceConstants.swift */; };
+		57AC2E011CF753560087BEDA /* JServiceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC2DF91CF753560087BEDA /* JServiceConstants.swift */; };
+		57AC2E021CF753560087BEDA /* JServiceModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC2DFA1CF753560087BEDA /* JServiceModels.swift */; };
+		57AC2E031CF753560087BEDA /* JServiceModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC2DFA1CF753560087BEDA /* JServiceModels.swift */; };
+		57AC2E041CF753560087BEDA /* JServiceParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC2DFB1CF753560087BEDA /* JServiceParser.swift */; };
+		57AC2E051CF753560087BEDA /* JServiceParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC2DFB1CF753560087BEDA /* JServiceParser.swift */; };
+		57AC2E081CF753A80087BEDA /* TriviaQuestionInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC2E061CF753A80087BEDA /* TriviaQuestionInterfaceController.swift */; };
+		57AC2E0E1CF7739D0087BEDA /* SettingsCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC2E0C1CF7739D0087BEDA /* SettingsCategoryCell.swift */; };
+		57AC2E141CF775760087BEDA /* MenuInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC2E121CF775760087BEDA /* MenuInterfaceController.swift */; };
+		57AC2E161CF7789B0087BEDA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC2E151CF7789B0087BEDA /* Constants.swift */; };
+		57AC2E171CF7789B0087BEDA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC2E151CF7789B0087BEDA /* Constants.swift */; };
+		57AC2E191CF779500087BEDA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC2E181CF779500087BEDA /* Extensions.swift */; };
+		57AC2E1A1CF779500087BEDA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC2E181CF779500087BEDA /* Extensions.swift */; };
+		57E81CC01CF7805800A1FF6E /* TriviaAnswerInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E81CBF1CF7805800A1FF6E /* TriviaAnswerInterfaceController.swift */; };
+		57E81CC21CF78C4E00A1FF6E /* SettingsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E81CC11CF78C4E00A1FF6E /* SettingsInterfaceController.swift */; };
+		57E81CC41CF78E5400A1FF6E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E81CC31CF78E5400A1FF6E /* User.swift */; };
+		57E81CC61CF7960F00A1FF6E /* TriviaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E81CC51CF7960F00A1FF6E /* TriviaController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,17 +107,23 @@
 		57AC2DC01CF733660087BEDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57AC2DC21CF733660087BEDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57AC2DC71CF733670087BEDA /* GiveMeTriviaWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GiveMeTriviaWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		57AC2DCC1CF733670087BEDA /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		57AC2DCE1CF733670087BEDA /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		57AC2DD01CF733670087BEDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57AC2DD21CF733670087BEDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		57AC2DDE1CF7339F0087BEDA /* JServiceAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JServiceAPI.swift; path = JService/JServiceAPI.swift; sourceTree = "<group>"; };
-		57AC2DE11CF734380087BEDA /* JServiceModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JServiceModels.swift; path = JService/JServiceModels.swift; sourceTree = "<group>"; };
-		57AC2DE61CF7346B0087BEDA /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		57AC2DE81CF734750087BEDA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		57AC2DEA1CF739840087BEDA /* JServiceConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JServiceConstants.swift; path = JService/JServiceConstants.swift; sourceTree = "<group>"; };
-		57AC2DEC1CF73F100087BEDA /* JServiceParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JServiceParser.swift; path = JService/JServiceParser.swift; sourceTree = "<group>"; };
-		57AC2DEE1CF740A10087BEDA /* JServiceConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JServiceConnector.swift; path = JService/JServiceConnector.swift; sourceTree = "<group>"; };
+		57AC2DF71CF753560087BEDA /* JServiceAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JServiceAPI.swift; sourceTree = "<group>"; };
+		57AC2DF81CF753560087BEDA /* JServiceConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JServiceConnector.swift; sourceTree = "<group>"; };
+		57AC2DF91CF753560087BEDA /* JServiceConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JServiceConstants.swift; sourceTree = "<group>"; };
+		57AC2DFA1CF753560087BEDA /* JServiceModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JServiceModels.swift; sourceTree = "<group>"; };
+		57AC2DFB1CF753560087BEDA /* JServiceParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JServiceParser.swift; sourceTree = "<group>"; };
+		57AC2E061CF753A80087BEDA /* TriviaQuestionInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriviaQuestionInterfaceController.swift; sourceTree = "<group>"; };
+		57AC2E0C1CF7739D0087BEDA /* SettingsCategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCategoryCell.swift; sourceTree = "<group>"; };
+		57AC2E121CF775760087BEDA /* MenuInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuInterfaceController.swift; sourceTree = "<group>"; };
+		57AC2E151CF7789B0087BEDA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		57AC2E181CF779500087BEDA /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		57E81CBF1CF7805800A1FF6E /* TriviaAnswerInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriviaAnswerInterfaceController.swift; sourceTree = "<group>"; };
+		57E81CC11CF78C4E00A1FF6E /* SettingsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsInterfaceController.swift; sourceTree = "<group>"; };
+		57E81CC31CF78E5400A1FF6E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		57E81CC51CF7960F00A1FF6E /* TriviaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriviaController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +158,7 @@
 				57AC2DAD1CF7333D0087BEDA /* GiveMeTriviaTests */,
 				57AC2DBC1CF733660087BEDA /* GiveMeTriviaWatch */,
 				57AC2DCB1CF733670087BEDA /* GiveMeTriviaWatch Extension */,
+				57AC2DF51CF753560087BEDA /* Shared */,
 				57AC2D971CF7333D0087BEDA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -162,13 +182,7 @@
 				57AC2DA01CF7333D0087BEDA /* Assets.xcassets */,
 				57AC2DA21CF7333D0087BEDA /* LaunchScreen.storyboard */,
 				57AC2DA51CF7333D0087BEDA /* Info.plist */,
-				57AC2DE61CF7346B0087BEDA /* Extensions.swift */,
-				57AC2DE81CF734750087BEDA /* Constants.swift */,
 				57AC2D9B1CF7333D0087BEDA /* ViewController.swift */,
-				57AC2DE31CF734410087BEDA /* Controllers */,
-				57AC2DE41CF734470087BEDA /* Models */,
-				57AC2DE51CF7344C0087BEDA /* Views */,
-				57AC2DE01CF733E30087BEDA /* JService */,
 			);
 			path = GiveMeTrivia;
 			sourceTree = "<group>";
@@ -195,45 +209,64 @@
 		57AC2DCB1CF733670087BEDA /* GiveMeTriviaWatch Extension */ = {
 			isa = PBXGroup;
 			children = (
-				57AC2DCC1CF733670087BEDA /* InterfaceController.swift */,
 				57AC2DCE1CF733670087BEDA /* ExtensionDelegate.swift */,
 				57AC2DD01CF733670087BEDA /* Assets.xcassets */,
 				57AC2DD21CF733670087BEDA /* Info.plist */,
+				57AC2E151CF7789B0087BEDA /* Constants.swift */,
+				57AC2E181CF779500087BEDA /* Extensions.swift */,
+				57AC2DF21CF7533F0087BEDA /* Controllers */,
+				57AC2DF31CF7533F0087BEDA /* Models */,
+				57AC2DF41CF7533F0087BEDA /* Views */,
 			);
 			path = "GiveMeTriviaWatch Extension";
 			sourceTree = "<group>";
 		};
-		57AC2DE01CF733E30087BEDA /* JService */ = {
+		57AC2DF21CF7533F0087BEDA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				57AC2DDE1CF7339F0087BEDA /* JServiceAPI.swift */,
-				57AC2DE11CF734380087BEDA /* JServiceModels.swift */,
-				57AC2DEA1CF739840087BEDA /* JServiceConstants.swift */,
-				57AC2DEC1CF73F100087BEDA /* JServiceParser.swift */,
-				57AC2DEE1CF740A10087BEDA /* JServiceConnector.swift */,
+				57AC2E121CF775760087BEDA /* MenuInterfaceController.swift */,
+				57AC2E061CF753A80087BEDA /* TriviaQuestionInterfaceController.swift */,
+				57E81CBF1CF7805800A1FF6E /* TriviaAnswerInterfaceController.swift */,
+				57E81CC11CF78C4E00A1FF6E /* SettingsInterfaceController.swift */,
+				57E81CC51CF7960F00A1FF6E /* TriviaController.swift */,
 			);
-			name = JService;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
-		57AC2DE31CF734410087BEDA /* Controllers */ = {
+		57AC2DF31CF7533F0087BEDA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				57E81CC31CF78E5400A1FF6E /* User.swift */,
 			);
-			name = Controllers;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		57AC2DE41CF734470087BEDA /* Models */ = {
+		57AC2DF41CF7533F0087BEDA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				57AC2E0C1CF7739D0087BEDA /* SettingsCategoryCell.swift */,
 			);
-			name = Models;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		57AC2DE51CF7344C0087BEDA /* Views */ = {
+		57AC2DF51CF753560087BEDA /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				57AC2DF61CF753560087BEDA /* JService */,
 			);
-			name = Views;
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		57AC2DF61CF753560087BEDA /* JService */ = {
+			isa = PBXGroup;
+			children = (
+				57AC2DF71CF753560087BEDA /* JServiceAPI.swift */,
+				57AC2DF81CF753560087BEDA /* JServiceConnector.swift */,
+				57AC2DF91CF753560087BEDA /* JServiceConstants.swift */,
+				57AC2DFA1CF753560087BEDA /* JServiceModels.swift */,
+				57AC2DFB1CF753560087BEDA /* JServiceParser.swift */,
+			);
+			path = JService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,15 +431,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57AC2DE71CF7346B0087BEDA /* Extensions.swift in Sources */,
+				57AC2DFC1CF753560087BEDA /* JServiceAPI.swift in Sources */,
+				57AC2DFE1CF753560087BEDA /* JServiceConnector.swift in Sources */,
 				57AC2D9C1CF7333D0087BEDA /* ViewController.swift in Sources */,
-				57AC2DEF1CF740A10087BEDA /* JServiceConnector.swift in Sources */,
+				57AC2E001CF753560087BEDA /* JServiceConstants.swift in Sources */,
 				57AC2D9A1CF7333D0087BEDA /* AppDelegate.swift in Sources */,
-				57AC2DE21CF734380087BEDA /* JServiceModels.swift in Sources */,
-				57AC2DEB1CF739840087BEDA /* JServiceConstants.swift in Sources */,
-				57AC2DDF1CF7339F0087BEDA /* JServiceAPI.swift in Sources */,
-				57AC2DE91CF734750087BEDA /* Constants.swift in Sources */,
-				57AC2DED1CF73F100087BEDA /* JServiceParser.swift in Sources */,
+				57AC2E041CF753560087BEDA /* JServiceParser.swift in Sources */,
+				57AC2E021CF753560087BEDA /* JServiceModels.swift in Sources */,
+				57AC2E191CF779500087BEDA /* Extensions.swift in Sources */,
+				57AC2E161CF7789B0087BEDA /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,8 +455,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57AC2E141CF775760087BEDA /* MenuInterfaceController.swift in Sources */,
+				57AC2E171CF7789B0087BEDA /* Constants.swift in Sources */,
+				57AC2E031CF753560087BEDA /* JServiceModels.swift in Sources */,
+				57AC2DFF1CF753560087BEDA /* JServiceConnector.swift in Sources */,
+				57E81CC01CF7805800A1FF6E /* TriviaAnswerInterfaceController.swift in Sources */,
+				57AC2E0E1CF7739D0087BEDA /* SettingsCategoryCell.swift in Sources */,
+				57AC2E051CF753560087BEDA /* JServiceParser.swift in Sources */,
+				57AC2E1A1CF779500087BEDA /* Extensions.swift in Sources */,
+				57E81CC41CF78E5400A1FF6E /* User.swift in Sources */,
 				57AC2DCF1CF733670087BEDA /* ExtensionDelegate.swift in Sources */,
-				57AC2DCD1CF733670087BEDA /* InterfaceController.swift in Sources */,
+				57E81CC61CF7960F00A1FF6E /* TriviaController.swift in Sources */,
+				57AC2DFD1CF753560087BEDA /* JServiceAPI.swift in Sources */,
+				57AC2E081CF753A80087BEDA /* TriviaQuestionInterfaceController.swift in Sources */,
+				57AC2E011CF753560087BEDA /* JServiceConstants.swift in Sources */,
+				57E81CC21CF78C4E00A1FF6E /* SettingsInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -683,6 +729,7 @@
 				57AC2DB51CF7333D0087BEDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		57AC2DB61CF7333D0087BEDA /* Build configuration list for PBXNativeTarget "GiveMeTriviaTests" */ = {
 			isa = XCConfigurationList;
@@ -691,6 +738,7 @@
 				57AC2DB81CF7333D0087BEDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		57AC2DD61CF733670087BEDA /* Build configuration list for PBXNativeTarget "GiveMeTriviaWatch Extension" */ = {
 			isa = XCConfigurationList;
@@ -699,6 +747,7 @@
 				57AC2DD81CF733670087BEDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		57AC2DDA1CF733670087BEDA /* Build configuration list for PBXNativeTarget "GiveMeTriviaWatch" */ = {
 			isa = XCConfigurationList;
@@ -707,6 +756,7 @@
 				57AC2DDC1CF733670087BEDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

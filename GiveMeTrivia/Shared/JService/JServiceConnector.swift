@@ -28,6 +28,12 @@ class JServiceConnector {
         session.dataTaskWithRequest(request, completionHandler: { (data, response, error) in
             var json: AnyObject?
             do {
+                if let data = data {
+                    print(NSString(data: data, encoding: NSUTF8StringEncoding))
+                } else {
+                    print("Empty Data")
+                }
+                
                 json = try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)
             } catch _ {
                 print("JSON Serialization Error")
@@ -62,6 +68,7 @@ class JServiceConnector {
             }
             
             let clues = JServiceParser.parseClueList(cluesJson)
+            clues.forEach({ $0.category = category })
             dispatch_async(dispatch_get_main_queue(), {
                 callback(category, clues)
             })

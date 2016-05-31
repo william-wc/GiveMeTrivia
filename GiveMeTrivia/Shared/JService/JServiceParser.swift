@@ -17,12 +17,11 @@ class JServiceParser {
         guard let id        = json["id"] as? Int
             , idCategory    = json["category_id"] as? Int
             , question      = json["question"] as? String
-            , answer        = json["answer"] as? String
-            , value         = json["value"] as? Int else {
+            , answer        = json["answer"] as? String else {
             print("Clue didnt parse properly")
             return nil
         }
-        
+        let value = json["value"] as? Int
         let clue = JSClue(id: id, idCategory: idCategory, question: question, answer: answer, value: value)
         let category = parseCategory(json)
         clue.category = category
